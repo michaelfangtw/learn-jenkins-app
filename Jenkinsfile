@@ -44,8 +44,9 @@ pipeline {
             steps{
                 echo 'test stage'
                 sh '''
-                    test -f build/index.html
-                    npm test
+                   npm install -g serve
+                   serve -s build
+                   npx playwright test
                 '''
             }
         }
