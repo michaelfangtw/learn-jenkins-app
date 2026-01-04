@@ -1,11 +1,10 @@
-pipeline{
+pipeline {
     agent any
-    {
-        stages{
-            stage ('Hello){
-                steps{
-                    echo "hello world"
-                }
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
             }
         }
     }
