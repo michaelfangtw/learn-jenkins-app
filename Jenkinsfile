@@ -42,5 +42,10 @@ pipeline {
         always{
             junit 'test-results/junit.xml'
         }
+          failure {
+            echo "========================================="
+            echo "Build failed."
+            echo "========================================="
+        }
     }
 }
